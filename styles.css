@@ -83,11 +83,6 @@ input[readonly]
     cursor: not-allowed;
 }
 
-.formABM
-{
-    display: none;
-}
-
 .hidden
 {
     display: none;

@@ -334,32 +334,32 @@ $("alta").addEventListener("click", function() {
     let robos = $("ABMrobos").value;
     let asesinatos = $("ABMasesinatos").value;
 
-    // if (nombre == "" || apellido == "" || apellido < 1985 || velocidadMaxima == "" || velocidadMaxima < 0)
-    // {
-    //     alert("Por favor complete los datos Modelo, Año de Fabricacion o Velocidad Maxima correctamente");
+    if (nombre == "" || apellido == "" || edad == "" || edad < 0)
+    {
+        alert("Por favor complete los datos Nombre, Apellido o Edad correctamente");
 
-    //     return;
-    // }
+        return;
+    }
 
-    // if(selectTipo == "Autos")
-    // {
-    //     if (cantidadPuertas == "" || cantidadPuertas < 2 || asientos == "" || asientos < 2)
-    //     {
-    //         alert("Por favor complete los datos Cantidad de Puertas o Cantidad de Asientos correctamente");
+    if (selectTipo == "Heroe")
+    {
+        if (alterego == "" || ciudad == "" || publicado < 1940)
+        {
+            alert("Por favor complete los datos Alterego, Ciudad o Publicado correctamente");
 
-    //         return;
-    //     }
-    // }
+            return;
+        }
+    }
 
-    // if(selectTipo == "Camiones")
-    // {
-    //     if (carga == "" || carga < 0 || autonomia == "" || autonomia < 0)
-    //     {
-    //         alert("Por favor complete los datos Carga o Autonomia correctamente");
+    if (selectTipo == "Villano")
+    {
+        if (enemigo == "" || robos == "" || robos < 0 || asesinatos == "" || asesinatos < 0)
+        {
+            alert("Por favor complete los datos Enemigo, Robos o Asesinatos correctamente");
 
-    //         return;
-    //     }
-    // }
+            return;
+        }
+    }
 
     if (selectTipo === "Heroe")
     {
@@ -414,32 +414,32 @@ $("modificar").addEventListener("click", function() {
     let robos = $("ABMrobos").value;
     let asesinatos = $("ABMasesinatos").value;
 
-    // if (modelo == "" || anioFabricacion == "" || velocidadMaxima == "" || velocidadMaxima < 0)
-    // {
-    //     alert("Por favor complete los datos Modelo, Año de Fabricacion o Velocidad Maxima correctamente");
+    if (nombre == "" || apellido == "" || edad == "" || edad < 0)
+    {
+        alert("Por favor complete los datos Nombre, Apellido o Edad correctamente");
 
-    //     return;
-    // }
+        return;
+    }
 
-    // if(selectTipo == "Autos")
-    // {
-    //     if (cantidadPuertas == "" || cantidadPuertas < 2 || asientos == "" || asientos < 2)
-    //     {
-    //         alert("Por favor complete los datos Cantidad de Puertas o Cantidad de Asientos correctamente");
+    if (selectTipo == "Heroe")
+    {
+        if (alterego == "" || ciudad == "" || publicado < 1940)
+        {
+            alert("Por favor complete los datos Alterego, Ciudad o Publicado correctamente");
 
-    //         return;
-    //     }
-    // }
+            return;
+        }
+    }
 
-    // if(selectTipo == "Camiones")
-    // {
-    //     if (carga == "" || carga < 0 || autonomia == "" || autonomia < 0)
-    //     {
-    //         alert("Por favor complete los datos Carga o Autonomia correctamente");
+    if (selectTipo == "Villano")
+    {
+        if (enemigo == "" || robos == "" || robos < 0 || asesinatos == "" || asesinatos < 0)
+        {
+            alert("Por favor complete los datos Enemigo, Robos o Asesinatos correctamente");
 
-    //         return;
-    //     }
-    // }
+            return;
+        }
+    }
 
     let index = listaPersonas.findIndex(persona => persona.id == id);
 
