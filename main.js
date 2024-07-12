@@ -290,7 +290,7 @@ $("btnCalcular").addEventListener("click", function() {
 
     let edadTotal = 0;
     listaVisible.forEach(persona =>{
-        edadTotal += persona.edad;
+        edadTotal += parseFloat(persona.edad);
     });
 
     let edadPromedio = edadTotal / listaVisible.length;
