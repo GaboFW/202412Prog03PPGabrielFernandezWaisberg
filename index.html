@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PP Labo3</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="formListado">
+        <h1>Form Listado:</h1>
+        <p>Filtrar por:
+            <select id="tipoVehiculo">
+                <option value="Todos">Todos</option>
+                <option value="Heroe">Heroe</option>
+                <option value="Villano">Villano</option>
+            </select>
+        </p>
+        <p>Calcular Edad Promedio:
+            <input id="inputCalcular" readonly>
+            <button id="btnCalcular">Calcular</button>
+        </p>
+        <p>Mostrar Columnas:</p>
+        <input type="checkbox" class="checkTabla" id="id" checked>
+        <label for="id">ID</label>
+
+        <input type="checkbox" class="checkTabla" id="nombre" checked>
+        <label for="nombre">Nombre</label>
+
+        <input type="checkbox" class="checkTabla" id="apellido" checked>
+        <label for="apellido">apellido</label>
+
+        <input type="checkbox" class="checkTabla" id="edad" checked>
+        <label for="edad">Edad</label>
+
+        <input type="checkbox" class="checkTabla" id="alterego" checked>
+        <label for="alterego">Alterego</label>
+
+        <input type="checkbox" class="checkTabla" id="ciudad" checked>
+        <label for="ciudad">Ciudad</label>
+
+        <input type="checkbox" class="checkTabla" id="publicado" checked>
+        <label for="publicado">Publicado</label>
+
+        <input type="checkbox" class="checkTabla" id="enemigo" checked>
+        <label for="enemigo">Enemigo</label>
+
+        <input type="checkbox" class="checkTabla" id="robos" checked>
+        <label for="robos">Robos</label>
+
+        <input type="checkbox" class="checkTabla" id="asesinatos" checked>
+        <label for="asesinatos">Asesinatos</label>
+
+        <table id="datosListado">
+            <thead>
+                <tr id="fila">
+                    <th>
+                        <button>ID</button>
+                    </th>
+                    <th>
+                        <button>Nombre</button>
+                    </th>
+                    <th>
+                        <button>Apellido</button>
+                    </th>
+                    <th>
+                        <button>Edad</button>
+                    </th>
+                    <th>
+                        <button>Alterego</button>
+                    </th>
+                    <th>
+                        <button>Ciudad</button>
+                    </th>
+                    <th>
+                        <button>Publicado</button>
+                    </th>
+                    <th>
+                        <button>Enemigo</button>
+                    </th>
+                    <th>
+                        <button>Robos</button>
+                    </th>
+                    <th>
+                        <button>Asesinatos</button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="bodyTabla">
+
+            </tbody>
+        </table>
+        <button id="agregar">Agregar</button>
+    </div>
+
+    <div id="formABM" style="display: none;">
+        <h1>Formulario ABM</h1>
+        <p>ID: <input readonly id="ABMid"></p>
+        <p>Nombre: <input type="text" id="ABMnombre" placeholder="Nombre"></p>
+        <p>Apellido: <input type="text" id="ABMapellido" placeholder="Apellido"></p>
+        <p>Edad: <input type="number" id="ABMedad" placeholder="Edad"></p>
+        <p>Tipo: 
+            <select id="tipoSelect">
+                <option value="Heroe">Heroe</option>
+                <option value="Villano">Villano</option>
+            </select>
+        </p>
+        <div id="divHeroe">
+            <p>Alterego: <input type="text" id="ABMalterego" placeholder="Alterego"></p>
+            <p>Ciudad: <input type="text" id="ABMciudad" placeholder="Ciudad"></p>
+            <p>Publicado: <input type="text" id="ABMpublicado" placeholder="Publicado"></p>
+        </div>
+        <div id="divVillano">
+            <p>Enemigo: <input type="text" id="ABMenemigo" placeholder="Enemigo"></p>
+            <p>Robos: <input type="number" id="ABMrobos" placeholder="Robos"></p>
+            <p>Asesinatos: <input type="number" id="ABMasesinatos" placeholder="Asesinatos"></p>
+        </div>
+        
+        <button id="alta">Alta</button>
+        <button id="modificar">Modificar</button>
+        <button id="eliminar">Eliminar</button>
+        <button id="cancelar">Cancelar</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
